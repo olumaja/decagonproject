@@ -48,9 +48,20 @@ $.ajax({
                     })
                 })
 
+                $('.edit-btn').on('click', (e) =>{
+                    let edId = e.target.id.split('edit-').join('');
+
+                    $.ajax({
+                        url:`http://localhost:3000/Animal/${edId}`,
+                        method: 'put'
+                    }).done((e) =>{
+
+                    })
+                })
+
 })
 
-$('#zooFrm').submit((e)=>{
+$('#zooModal').submit((e)=>{
     e.preventDefault()
     let pic = ['lion', 'tiger', 'parrot', 'zebra', 'cheetah', 'gorilla', 'elephant', 'tortoise', 'koala', 'leopard', 'giraffe','deer'];
     let name = $('#name').val();
