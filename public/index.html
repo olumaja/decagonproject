@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+   <style>
+       #body{
+           margin: auto; padding: auto;
+           overflow-x: hidden;
+       }
+
+       #container{
+           margin-right: inherit; margin-left: inherit;
+           padding-right: inherit; padding-left: inherit;
+       }
+
+       #navs{
+           background-color:#333333; padding-left: 200px;
+       }
+
+       
+   </style>
+  </head>
+  <body id="body">
+
+        <div id="container" class="container-fluid">
+            <div id="navs">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="#">About Us</a>
+                                <a class="nav-item nav-link" href="#">Contact</a>
+                            <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+                            </div>
+                            </div>
+                        
+                    </nav>
+                </div>
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                        <form id="zooFrm">
+                            <div class="row">
+                                <div class="col"><input type="text" class="form-control" id="name" name="name" placeholder="Animal Name"></div>
+                                <div class="col"><input type="text" id="species" class="form-control" name="species" placeholder="Animal Spiece"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><textarea id="info" class="form-control" name="info" placeholder="Enter the information about the animal"  rows="6"></textarea></div>
+                            </div>
+                                <button class="btn btn-primary" type="submit"> submit</button>
+                        </form>
+                </div>
+                <div class="col-3"></div>
+            </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 offset-col-2">
+                <p>Animal List</p>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 offset-col-1">
+                        <table class="table table-dark">
+                        <thead>
+                          <th style="width: 50px">SN</th>
+                          <th style="width: 100px">Image</th>
+                          <th style="width: 100px">Name</th>
+                          <th style="width: 100px">Species</th>
+                         <th style="width: 100px">Things to know</th>
+                         <th style="width: 100px">Action</th>
+                        </thead>
+                        <tbody id="tbody">
+                  
+                        </tbody>
+                      </table>
+                </div>
+        </div>
+
+        </div>
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/source.js"></script>
+  </body>
+</html>
