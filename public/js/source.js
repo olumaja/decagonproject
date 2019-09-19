@@ -20,11 +20,11 @@ $.ajax({
                         ${e[i].species} 
                     </td>
                     <td>
-                            ${e[i].info.slice(0,200) + '...<br><a href="#" id="read" onclick="newDisplay(' +`${e[i].id}`+ ')">View More</a>' }
+                            ${e[i].info.slice(0,200) + `...<br><button id="read" class="btn btn-outline-info btn-small info-btn" onclick='newDisplay(${JSON.stringify(e[i])})'>View More</button>` }
                     </td>
                     <td>
-                        <button id="del-${e[i].id}" class="btn btn-danger delete-btn">Delete</button>
-                        <button id="edt-${e[i].id}" class="btn btn-primary edit-btn">Edit</button>
+                        <button id="del-${e[i].id}" class="btn btn-danger delete-btn"><i class="far fa-trash-alt"></i></button>
+                        <button id="edt-${e[i].id}" class="btn btn-primary edit-btn" onclick='newDisplay(${JSON.stringify(e[i])})'>Edit</button>
                     </td>
                         
                 </tr>`
@@ -37,18 +37,18 @@ $.ajax({
 
                 //Delete function
                 $('.delete-btn').on('click', (e) =>{
-                    let id = e.target.id.split('del-').join('');
+                    let delId = e.target.id.split('del-').join('');
                     //alert(id);
 
                     $.ajax({
-                        url:`http://localhost:3000/Animal/${id}`,
+                        url:`http://localhost:3000/Animal/${delId}`,
                         method: 'delete'
                     }).done((e) =>{
-                        $(`#tr-${id}`).fadeOut(500);
+                        $(`#tr-${delId}`).fadeOut(500);
                     })
                 })
 
-                $('.edit-btn').on('click', (e) =>{
+               /* $('.edit-btn').on('click', (e) =>{
                     let edId = e.target.id.split('edit-').join('');
 
                     $.ajax({
@@ -57,7 +57,7 @@ $.ajax({
                     }).done((e) =>{
 
                     })
-                })
+                })*/
 
 })
 
@@ -106,8 +106,8 @@ $('#tbody').append(
         ${e.info.slice(0,200) + '...<br><a href="#" id="read">View More</a>' }
         </td>
         <td>
-        <button id="del-${e.id}" class="btn btn-danger delete-btn">Delete</button>
-        <button id="edt-${e.id}" class="btn btn-primary edit-btn">Edit</button>
+        <button id="del-${e.id}" class="btn btn-danger delete-btn"><i class="far fa-trash-alt"></i></button>
+        <button id="edt-${e.id}" class="btn btn-primary edit-btn"><i class="far fa-edit"></i> Edit</button>
         </td>
         </tr>`
         )
@@ -116,11 +116,17 @@ $('#tbody').append(
         $('#species').val('');
         $('#info').val('');
         //$('#address').val('')
+
+         
+         
         
     })
 })
 
-function newDisplay(myId){
-    let myStore = localStorage.setItem("id", "'" + myId + "'");
+function newDisplay(objAni){
+
+    localStorage.setItem("animal",JSON.stringify(objAni));
+
+    window.location.href = "http://localhost:3000/display.html"
     //alert(myStore);
 }

@@ -9,35 +9,11 @@
     <link rel="stylesheet" href="css/source.css">
     <script src="https://kit.fontawesome.com/bdf99cea4a.js" crossorigin="anonymous"></script>
     
-   <style>
-       #body{
-           margin: auto; padding: auto;
-           overflow-x: hidden;
-       }
-
-       #container{
-           margin-right: inherit; margin-left: inherit;
-           padding-right: inherit; padding-left: inherit;
-       }
-
-       #navs{
-           background-color:#454d55; padding-left: 200px;
-       }
-
-       .aNav{
-           margin: 5px;
-           padding-left: 5px; padding-right: 5px;
-       }
-
-       #frmTextArea{padding-top: 6px; padding-bottom: 6px;}
-
-       
-   </style>
   </head>
   <body id="body">
 
         <div id="container" class="container-fluid">
-            <div id="navs">
+            <header id="navs">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         
                             <a class="navbar-brand" href="#">Navbar</a>
@@ -48,14 +24,14 @@
                             <div class="navbar-nav">
                                 <a class="nav-item nav-link active aNav" href="#">Home <span class="sr-only">(current)</span></a>
                                 <a class="nav-item nav-link aNav" data-toggle="modal" data-target="#zooModal" href="#"><i class="fas fa-plus-square"></i> Add Animal</a>
-                                <a class="nav-item nav-link aNav" href="#"><i class="fas fa-edit"></i> Edit Animal</a>
+                                <!--<a class="nav-item nav-link aNav" href="#"><i class="fas fa-edit"></i> Edit Animal</a>-->
                             <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
                             </div>
                             </div>
                         
                     </nav>
-                </div>
-
+            </header>
+            <main>
                 <div class="bd-example">
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                       <ol class="carousel-indicators">
@@ -65,21 +41,21 @@
                       </ol>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/Animalslider.jpg" class="d-block w-100" alt="Animals" style="width: 700px; height: 600px">
+                          <img src="images/Animalslider.jpg" class="img-fluid d-block w-100" alt="Animals" style="width: 700px; height: 600px">
                           <div class="carousel-caption d-none d-md-block">
                             <h3>First slide label</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img src="images/giraffelag.jpg" class="d-block w-100" alt="Giraffe" style="width: 700px; height: 600px">
+                          <img src="images/giraffelag.jpg" class="img-fluid d-block w-100" alt="Giraffe" style="width: 700px; height: 600px">
                           <div class="carousel-caption d-none d-md-block">
                             <h3>Giraffe</h3>
                             <p>Primarily in savanna areas in the sub-Saharan region of Africa.</p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img src="images/chettah.jpeg" class="d-block w-100" alt="Tiger" style="width: 700px; height: 600px">
+                          <img src="images/chettah.jpeg" class="img-fluid d-block w-100" alt="Tiger" style="width: 700px; height: 600px">
                           <div class="carousel-caption d-none d-md-block">
                             <h3>Chettah</h3>
                             <p>Present in the Savanna in sub-Saharan region of Africa.</p>
@@ -114,10 +90,10 @@
                 <div class="col-3"></div>
             </div>-->
 
-        <div class="row">
+        <div id="pText" class="row">
             <div class="col-2"></div>
             <div class="col-8 offset-col-2">
-                <p>Animal List</p>
+                <p><span> Animal List</span></p>
             </div>
         </div>
 
@@ -149,6 +125,7 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
+                
                 <div class="modal-body">
                     <form id="zooFrm">
                         <div class="row">
@@ -169,6 +146,12 @@
               </div>
             </div>
           </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
 
         </div>
 

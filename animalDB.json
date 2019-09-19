@@ -8,18 +8,18 @@
       "info": "Lions live in the grasslands, scrub, and open woodlands of sub-Saharan Africa, the lion is the second largest cat in the world. It is dwarfed slightly by the tiger, which is closely related and has a very similar body type.<p>Unlike other cats, lions are very social animals. They live in groups, called prides, of around 30 lions. A pride consists of up to three males, a dozen related females, and their young. The size of the pride is determined by the availability of food and water. If resources are scarce, the pride becomes smaller.<br> Pride members keep track of one another by roaring. Both males and females have a very powerful roar that can be heard up to 8 km (5 mi.) away.</p>"
     },
     {
-      "id": 2,
-      "name": "Parrot",
-      "species": "Bird",
-      "pix": "parrot.jpg",
-      "info": "<p>Parrots are definitely among the most colorful bird out there. Known for their ability to talk back and sit on Pirate's shoulders.</p><p>Most wild parrots live in the warm areas of the Southern Hemisphere, though they can be found in many other regions of the world, such as northern Mexico. Australia, South America and Central America have the greatest diversity of parrot species.</p>"
-    },
-    {
       "name": "Tiger",
       "species": "Cat",
       "info": "Tigers are the biggest species of the cat family,  they can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds). <p>Tiger cubs leave their mother when they are around 2 years of age. A group of tigers is known as an ‘ambush’ or ‘streak’<br>Tigers are good swimmers and can swim up to 6 kilometers and they usually hunt alone at night time. Tigers that breed with lions give birth to hybrids known as tigons and ligers.</p>",
       "pix": "tiger.jpg",
       "id": 3
+    },
+    {
+      "name": "Giraffe",
+      "species": "Giraffa",
+      "info": "Giraffes are characterized by its long legs, long neck, and distinctive spotted pattern, many people first believed the giraffe was a cross between a leopard and a camel, which is reflected in its scientific name, Giraffa camelopardalis. Giraffes live primarily in savanna areas in the sub-Saharan region of Africa. Their extreme height allows them to eat leaves and shoots located much higher than other animals can reach, the male giraffe is both taller and heavier than the female.",
+      "id": 4,
+      "pix": "giraffe.jpg"
     }
   ]
 }
