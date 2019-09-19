@@ -24,7 +24,7 @@ $.ajax({
                     </td>
                     <td>
                         <button id="del-${e[i].id}" class="btn btn-danger delete-btn"><i class="far fa-trash-alt"></i></button>
-                        <button id="edt-${e[i].id}" class="btn btn-primary edit-btn" onclick='newDisplay(${JSON.stringify(e[i])})'>Edit</button>
+                        <button id="edt-${e[i].id}" class="btn btn-primary edit-btn" onclick='newDisplay(${JSON.stringify(e[i])})'> Edit</button>
                     </td>
                         
                 </tr>`
@@ -48,37 +48,33 @@ $.ajax({
                     })
                 })
 
-               /* $('.edit-btn').on('click', (e) =>{
-                    let edId = e.target.id.split('edit-').join('');
-
-                    $.ajax({
-                        url:`http://localhost:3000/Animal/${edId}`,
-                        method: 'put'
-                    }).done((e) =>{
-
-                    })
-                })*/
-
 })
 
 $('#zooModal').submit((e)=>{
     e.preventDefault()
-    let pic = ['lion', 'tiger', 'parrot', 'zebra', 'cheetah', 'gorilla', 'elephant', 'tortoise', 'koala', 'leopard', 'giraffe','deer'];
+    let pic = ['lion', 'tiger', 'parrot', 'zebra', 'cheetah', 'gorilla', 'elephant', 'tortoise', 'koala', 'leopard', 'giraffe','deer', 'monkey', 'gorilla'];
     let name = $('#name').val();
     let species = $('#species').val();
     let info = $('#info').val();
     let pix = "";
     let picName = "";
     picName = name.toLowerCase();
-    alert(picName);
+    //alert(picName);
     for(let i = 0; i < pic.length; i++){
         
-        if(pic[i] == picName){
+       /* if(pic[i] == picName){
             pix = pic[i] + ".jpg";
+            break;
+            
         }
         else{
             pix = "sliderImg.jpg";
+            
+        }*/
+        if(pic[i].includes(picName)){
+            pix = pic[i] + ".jpg";
         }
+        else{pix = "sliderImg.jpg";}
     }
     
     $.ajax({
@@ -94,7 +90,7 @@ $('#tbody').append(
        ${count + 1} 
     </td>
     <td>
-        <img src="${e.pix}" alt="${picName}" style="width:8em; height:6em">
+        <img src="images/${pix}" alt="${picName}" style="width:8em; height:6em">
         </td>
 <td>
        ${e.name} 
@@ -103,7 +99,7 @@ $('#tbody').append(
     ${e.species} 
     </td>
     <td>
-        ${e.info.slice(0,200) + '...<br><a href="#" id="read">View More</a>' }
+        ${e.info.slice(0,200) + '...<br><button class="btn btn-outline-info" id="read">View More</button>' }
         </td>
         <td>
         <button id="del-${e.id}" class="btn btn-danger delete-btn"><i class="far fa-trash-alt"></i></button>
