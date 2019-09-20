@@ -8,6 +8,11 @@
     padding-right: inherit; padding-left: inherit;
 }
 
+#container-fluid{
+    margin-right: inherit; margin-left: inherit;
+    padding-right: inherit; padding-left: inherit;
+}
+
 #navs{
     background-color:#212529; padding-left: 200px;
 }
@@ -29,11 +34,25 @@
 
 #imgholder{padding-top: 20px; padding-bottom: 20px;}
 
-/* .jumbotron {
-    background: url(images/giraffelag.jpg) no-repeat center;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    min-width: 100%;
-    min-height: 100%;
-} */
+#signin{color:#ffffff; 
+    
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+
+}
+
+#signin input{background: none; border: 1px solid #b3b3b3}
+
+#textfloat{position: absolute;
+    top: 200px;
+    left: 500px; z-index: 10; color: #b3b3b3; text-align: center;
+}
+
+#welcome{
+    font-size: 40px;
+}
+#decagon{
+    font-size: 150px; color: #0066cc;
+}
+#zoo{font-size: 80px;}

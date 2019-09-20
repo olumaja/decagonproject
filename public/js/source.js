@@ -24,7 +24,7 @@ $.ajax({
                     </td>
                     <td>
                         <button id="del-${e[i].id}" class="btn btn-danger delete-btn"><i class="far fa-trash-alt"></i></button>
-                        <button id="edt-${e[i].id}" class="btn btn-primary edit-btn" onclick='newDisplay(${JSON.stringify(e[i])})'> Edit</button>
+                        <button id="edt-${e[i].id}" class="btn btn-primary edit-btn" onclick='newDisplay(${JSON.stringify(e[i])})'><i class="far fa-edit"></i> Edit</button>
                     </td>
                         
                 </tr>`
@@ -52,7 +52,7 @@ $.ajax({
 
 $('#zooModal').submit((e)=>{
     e.preventDefault()
-    let pic = ['lion', 'tiger', 'parrot', 'zebra', 'cheetah', 'gorilla', 'elephant', 'tortoise', 'koala', 'leopard', 'giraffe','deer', 'monkey', 'gorilla'];
+    let pic = ['lion', 'tiger', 'parrot', 'zebra', 'cheetah', 'gorilla', 'elephant', 'tortoise', 'koala', 'leopard', 'giraffe','deer', 'monkey', 'gorilla', 'zebra', 'monkey'];
     let name = $('#name').val();
     let species = $('#species').val();
     let info = $('#info').val();
@@ -99,11 +99,12 @@ $('#tbody').append(
     ${e.species} 
     </td>
     <td>
-        ${e.info.slice(0,200) + '...<br><button class="btn btn-outline-info" id="read">View More</button>' }
+        ${e.info.slice(0,200) + '...<br><button class="btn btn-outline-info" id="read" onclick="newDisplay(${JSON.stringify(e[i])})" >View More</button>' }
         </td>
         <td>
         <button id="del-${e.id}" class="btn btn-danger delete-btn"><i class="far fa-trash-alt"></i></button>
-        <button id="edt-${e.id}" class="btn btn-primary edit-btn"><i class="far fa-edit"></i> Edit</button>
+        <button id="edt-${e.id}" class="btn btn-primary edit-btn" onclick='newDisplay(${JSON.stringify(e)})'><i class="far fa-edit"></i> Edit</button>
+        
         </td>
         </tr>`
         )
@@ -114,7 +115,18 @@ $('#tbody').append(
         //$('#address').val('')
 
          
-         
+          //Delete function
+          $('.delete-btn').on('click', (e) =>{
+            let delId = e.target.id.split('del-').join('');
+            //alert(id);
+
+            $.ajax({
+                url:`http://localhost:3000/Animal/${delId}`,
+                method: 'delete'
+            }).done((e) =>{
+                $(`#tr-${delId}`).fadeOut(500);
+            })
+        })
         
     })
 })

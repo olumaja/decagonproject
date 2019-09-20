@@ -13,6 +13,29 @@
       "species": "Mammal",
       "pix": "koala.jpg",
       "info": "Koalas are solitary animals found in cool temperate to tropical regions. They were once found throughout the eucalypt forests of Australia. They are protected as are all native Australian animals and they are now listed as a species vulnerable to extinction in NSW and Queensland. Koalas have thick fur for protection, large round furred ears, a large dark soft leathery nose and beady eyes. They have an acute sense of smell and hearing."
+    },
+    {
+      "name": "Zebra",
+      "species": "Grevy",
+      "info": "Black and white stripes make the zebra one of the most recognizable animals in the world. The plains zebra, also known as the common zebra, is the most abundant of three species of zebra, inhabiting the grasslands of eastern and southern Africa. The other two species are Grevy’s zebras and mountain zebras.\nOn average, plains zebras are smaller than the other two species of zebra. They range in height from 1-1.5 m (3.5-5 ft.) and can weigh almost 450 kg (1000 lbs.). Plains zebras also have a different stripe pattern than the other species. They have broad stripes that run horizontally towards the back and vertically towards the front, meeting in a triangle in the middle of their bodies. They also have a stripe that runs down the center of their backs onto the tail. Finally, plains zebras have underbelly stripes. Although all plains zebras share these similarities in stripe patterns, no two zebras have exactly the same pattern.",
+      "pix": "zebra.jpg",
+      "id": 3
+    },
+    {
+      "name": "Monkey",
+      "species": "Mammal",
+      "info": "Monkeys live in trees, grasslands, mountains, forests, and on high plains. A group of monkeys is called a troop. Most primates share six basic features: forward-facing eyes, eye sockets, grasping hands, nails, fingerprints, and large brains. Monkeys are most easily distinguished from apes by their tails.",
+      "pix": "monkey.jpg",
+      "id": 4
+    }
+  ],
+
+  "Users":[
+    {
+      "name": "Segun",
+      "email": "olumajasegun@gmail.com",
+      "password": "olumaja",
+      "id": 1
     }
   ]
 }
