@@ -2,6 +2,22 @@
 $(document).ready(function(){
     let data = localStorage.getItem('animal');
 
+    // $.ajax({
+    //     url: 'http://localhost:3000/Animal',
+    //     method: 'get',
+    // }).done((e)=>{
+
+
+
+    // })
+
+    // $('#name').val(animal.name);
+
+    // $('#species').val(animal.species);
+
+    // $('#info').val(animal.info);
+
+
     let animal = JSON.parse(data)
     
     
