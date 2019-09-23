@@ -1,30 +1,16 @@
 {
   "Animal": [
     {
-      "id": 1,
-      "name": "Lion",
-      "species": "cat",
-      "pix": "lion.jpg",
-      "info": "Lions live in the grasslands, scrub, and open woodlands of sub-Saharan Africa, the lion is the second largest cat in the world. It is dwarfed slightly by the tiger, which is closely related and has a very similar body type.<p>Unlike other cats, lions are very social animals. They live in groups, called prides, of around 30 lions. A pride consists of up to three males, a dozen related females, and their young. The size of the pride is determined by the availability of food and water. If resources are scarce, the pride becomes smaller.<br> Pride members keep track of one another by roaring. Both males and females have a very powerful roar that can be heard up to 8 km (5 mi.) away.</p>"
-    },
-    {
-      "id": 2,
       "name": "Koala",
       "species": "Mammal",
+      "info": "Koalas are solitary animals found in cool temperate to tropical regions. They were once found throughout the eucalypt forests of Australia. They are protected as are all native Australian animals and they are now listed as a species vulnerable to extinction in NSW and Queensland. Koalas have thick fur for protection, large round furred ears, a large dark soft leathery nose and beady eyes. They have an acute sense of smell and hearing.\nKoala can't be found in Africa",
       "pix": "koala.jpg",
-      "info": "Koalas are solitary animals found in cool temperate to tropical regions. They were once found throughout the eucalypt forests of Australia. They are protected as are all native Australian animals and they are now listed as a species vulnerable to extinction in NSW and Queensland. Koalas have thick fur for protection, large round furred ears, a large dark soft leathery nose and beady eyes. They have an acute sense of smell and hearing."
-    },
-    {
-      "name": "Zebra",
-      "species": "Grevy",
-      "info": "Black and white stripes make the zebra one of the most recognizable animals in the world. The plains zebra, also known as the common zebra, is the most abundant of three species of zebra, inhabiting the grasslands of eastern and southern Africa. The other two species are Grevy’s zebras and mountain zebras.\nOn average, plains zebras are smaller than the other two species of zebra. They range in height from 1-1.5 m (3.5-5 ft.) and can weigh almost 450 kg (1000 lbs.). Plains zebras also have a different stripe pattern than the other species. They have broad stripes that run horizontally towards the back and vertically towards the front, meeting in a triangle in the middle of their bodies. They also have a stripe that runs down the center of their backs onto the tail. Finally, plains zebras have underbelly stripes. Although all plains zebras share these similarities in stripe patterns, no two zebras have exactly the same pattern.",
-      "pix": "zebra.jpg",
-      "id": 3
+      "id": 2
     },
     {
       "name": "Monkey",
       "species": "Mammal",
-      "info": "Monkeys live in trees, grasslands, mountains, forests, and on high plains. A group of monkeys is called a troop. Most primates share six basic features: forward-facing eyes, eye sockets, grasping hands, nails, fingerprints, and large brains. Monkeys are most easily distinguished from apes by their tails.",
+      "info": "Monkeys live in trees, grasslands, mountains, forests, and on high plains. A group of monkeys is called a troop. Most primates share six basic features: forward-facing eyes, eye sockets, grasping hands, nails, fingerprints, and large brains. Monkeys are most easily distinguished from apes by their tails. All monkeys love banana but they can't climb banana tree.",
       "pix": "monkey.jpg",
       "id": 4
     }
@@ -44,15 +30,21 @@
     },
     {
       "name": "Patience",
-      "email": "Patienceosutuyi@gmail.com",
-      "password": "patience",
+      "email": "patienceosutuyi@gmail.com",
+      "password": "osutuyi",
       "id": 3
     },
     {
-      "name": "Olumaja",
-      "email": "segun.adaramaja@solo-phone.com",
+      "name": "Kafayat",
+      "email": "kafayat.fashola@yahoo.com",
       "password": "12345",
       "id": 4
+    },
+    {
+      "name": "Okiki",
+      "email": "olaokiki@gmail.com",
+      "password": "okiki",
+      "id": 5
     }
   ]
 }

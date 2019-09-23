@@ -4,42 +4,41 @@ $(document).ready(function(){
 
         e.preventDefault();
         
-        let password = $('#password').val();
-        let email = $('#email').val();
-        let eValidate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        let emailStatues = eValidate.test(String(email).toLowerCase());
-        let findemail = false;
-        let findpassword = false;
+        let password = $('#signPassword').val();
+        let email = $('#signEmail').val().toLowerCase();
+        let validity = false;
 
-        if(emailStatues){
-
-            $.ajax({
-                url: 'http://localhost:3000/Users',
-                method: 'get',
-            }).done((e)=>{
-
-                for(let i = 0; i < e.length; i++){
-                    if(e[i].email.includes(email)){
-                        findemail = true; 
-                    }
-                    if(e[i].password.includes(password)){
-                        findemail = true;
-                    }
-                }
-
-                if(!findemail || !findpassword){alert('Username or password is not correct!')}
-
-                if(findemail && findpassword){
-
-                    localStorage.setItem("person",JSON.stringify(e));
-
-                    window.location.href = "http://localhost:3000/animalList.html"
-
-                }
-
-            })
+        if(!email || !password){
+            alert("Enter a valid email and password address");
         }
+        else if(email && password){
+                $.ajax({
+                    url: 'http://localhost:3000/Users',
+                    method: 'get',
+                }).done((e)=>{
 
+                    for(let i = 0; i < e.length; i++){
+                        if(e[i].email.includes(email) && e[i].password.includes(password)){
+                            validity = true; 
+                            localStorage.setItem("person",JSON.stringify(e[i]));
+                            break;
+                        }
+                        
+                    }
+
+                if(validity){
+
+                        $('#signModal').modal('hide');
+                        
+                        window.location.href = "http://localhost:3000/animalList.html"
+
+                    }
+
+                    if(!validity){alert('Username or password is not correct!')}
+
+                })
+        }
+            
     })
 
 })
