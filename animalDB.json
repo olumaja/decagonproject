@@ -1,17 +1,31 @@
 {
   "Animal": [
     {
-      "name": "Koala",
+      "name": "Monkey",
       "species": "Mammal",
-      "info": "Koalas are solitary animals found in cool temperate to tropical regions. They were once found throughout the eucalypt forests of Australia. They are protected as are all native Australian animals and they are now listed as a species vulnerable to extinction in NSW and Queensland. Koalas have thick fur for protection, large round furred ears, a large dark soft leathery nose and beady eyes. They have an acute sense of smell and hearing.\nKoala can't be found in Africa",
-      "pix": "koala.jpg",
+      "info": "Monkeys live in trees, grasslands, mountains, forests, and on high plains. A group of monkeys is called a troop. Most primates share six basic features: forward-facing eyes, eye sockets, grasping hands, nails, fingerprints, and large brains. Monkeys are most easily distinguished from apes by their tails. All monkeys love banana.",
+      "pix": "monkey.jpg",
+      "id": 1
+    },
+    {
+      "name": "Cheetah",
+      "species": "Cat",
+      "info": "The cheetah is the fastest land animal in the world. They can reach a top speed of around 113 km per hour, a cheetah can accelerate from 0 to 113 km in just a few seconds. Cheetahs are extremely fast however they tire quickly and can only keep up their top speed for a few minutes before they are too tired to continue.\nCheetahs are smaller than other members of the big cat family, weighing only 45 – 60 kilograms, one way to always recognize a cheetah is by the long, black lines which run from the inside of each eye to the mouth and it's called tear lines.",
+      "pix": "cheetah.jpg",
       "id": 2
     },
     {
-      "name": "Monkey",
+      "name": "Gorilla",
       "species": "Mammal",
-      "info": "Monkeys live in trees, grasslands, mountains, forests, and on high plains. A group of monkeys is called a troop. Most primates share six basic features: forward-facing eyes, eye sockets, grasping hands, nails, fingerprints, and large brains. Monkeys are most easily distinguished from apes by their tails. All monkeys love banana but they can't climb banana tree.",
-      "pix": "monkey.jpg",
+      "info": "Gorillas are imposing beasts that live in tropical and subtropical forests. Being a close relative to the human race they are intelligent animals with a complex social structure.\nAn adult male gorilla is called a silverback because of the distinctive silvery fur growing on their back and hips. Each gorilla family has a silverback as leader who scares away other animals by standing on their back legs and beating their chest, for the first few months after birth the mother holds the baby gorilla to her chest.\nGorillas are herbivores. They spend most of their day foraging for food and eating bamboo, leafy plants and sometimes small insects. Adult gorillas can eat up to 30 kilograms of food each day. Gorillas are most found in Africa",
+      "pix": "gorilla.jpg",
+      "id": 3
+    },
+    {
+      "name": "Elephant",
+      "species": "Mammal",
+      "info": "Elephants are the largest land-living mammal in the world, there are two types of elephant, the Asian elephant and the African elephant.\nBoth female and male African elephants have tusks but only the male Asian elephants have tusks. They use their tusks for digging and finding food.\nElephants have large, thin ears. Their ears are made up of a complex network of blood vessels which help regulate their temperature. Blood is circulated through their ears to cool them down in hot climates. They are endanger specie",
+      "pix": "elephant.jpg",
       "id": 4
     }
   ],

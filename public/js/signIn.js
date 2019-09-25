@@ -9,7 +9,7 @@ $(document).ready(function(){
         let validity = false;
 
         if(!email || !password){
-            alert("Enter a valid email and password address");
+            alert("Enter a valid email address and password");
         }
         else if(email && password){
                 $.ajax({
@@ -29,8 +29,8 @@ $(document).ready(function(){
                 if(validity){
 
                         $('#signModal').modal('hide');
-                        
-                        window.location.href = "http://localhost:3000/animalList.html"
+                    
+                            window.location.href = "http://localhost:3000/animalList.html"
 
                     }
 

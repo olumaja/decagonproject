@@ -24,7 +24,7 @@
                             <div class="navbar-nav">
                                 <a class="nav-item nav-link active aNav" href="#">Home <span class="sr-only">(current)</span></a>
                                 <a class="nav-item nav-link aNav" data-toggle="modal" data-target="#zooModal" href="#"><i class="fas fa-plus-square"></i> Add Animal</a>
-                                <a class="nav-item nav-link aNav" href="#"><i class="fas fa-edit"></i> Sign Out</a>
+                                <a id="signOut" class="nav-item nav-link aNav" href="#"><i class="fas fa-edit"></i> Sign Out</a>
                             <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
                             </div>
                             </div>
@@ -73,22 +73,7 @@
                     </div>
                   </div>
 
-          <!--  <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                        <form id="zooFrm">
-                            <div class="row">
-                                <div class="col"><input type="text" class="form-control" id="name" name="name" placeholder="Animal Name"></div>
-                                <div class="col"><input type="text" id="species" class="form-control" name="species" placeholder="Animal Spiece"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><textarea id="info" class="form-control" name="info" placeholder="Enter the information about the animal"  rows="6"></textarea></div>
-                            </div>
-                                <button class="btn btn-primary" type="submit"> submit</button>
-                        </form>
-                </div>
-                <div class="col-3"></div>
-            </div>-->
+          
 
         <div id="pText" class="row">
             <div class="col-2"></div>
@@ -135,7 +120,7 @@
                         <div class="row">
                             <div id="frmTextArea" class="col"><textarea id="info" class="form-control" name="info" placeholder="Enter the information about the animal"  rows="6"></textarea></div>
                         </div>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         <button class="btn btn-primary" type="submit"> submit</button>
                     </form>
                 </div>
@@ -161,5 +146,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
         <script src="js/source.js"></script>
+        <script src="js/signOut.js"></script>
   </body>
 </html>

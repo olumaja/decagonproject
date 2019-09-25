@@ -14,7 +14,7 @@
 }
 
 #navs{
-    background-color:#212529; padding-left: 200px;
+    background-color:#343a40; padding-left: 200px;
 }
 
 .aNav{
@@ -46,13 +46,21 @@
 
 #textfloat{position: absolute;
     top: 200px;
-    left: 500px; z-index: 10; color: #b3b3b3; text-align: center;
+    left: 550px; z-index: 10; color: #b3b3b3; text-align: center;
 }
 
 #welcome{
     font-size: 40px;
 }
 #decagon{
-    font-size: 150px; color: #0066cc;
+    font-size: 100px; color: #0066cc;
 }
-#zoo{font-size: 80px;}
+#zoo{font-size: 100px; color: #0066cc}
+
+#footer{position:absolute; top: 720px; z-index: 8; color: #b3b3b3; width: 100%;
+    border-top: #b3b3b3 1px dotted; text-align: center; padding-top: 20px;
+}
+
+#socialMedia{font-size: 2rem;list-style:none;}
+
+#socialMedia li{ display: inline; padding-left: 30px;}

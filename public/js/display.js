@@ -1,10 +1,10 @@
+if(typeof(localStorage.getItem('animal')) === undefined){window.location.href = 'http://localhost:3000/animalList.html'}
+else{
 
     $(document).ready(function(){
 
-        let persons = localStorage.getItem('person');
+           // let personObj = JSON.parse(person);
 
-        if(persons == null){window.location.href = 'http://localhost:3000'}
-        else{
             let data = localStorage.getItem('animal');
     
             let animal = JSON.parse(data)
@@ -12,12 +12,12 @@
                 $('#displaytbody').append(
                     `<tr>
                         <td>
-                            <img src='images/${animal.pix}' />
+                            <img src='images/${animal.pix}' alt='${animal.name}' style='width:12em; height:10em'/>
                         </td>
                         <td>
-                            <div><span id="dbInfo">Name: ${animal.name}</span></div>
-                            <div><span id="dbInfo">Species: ${animal.species}</span></div>
-                            <div>${animal.info}</div>
+                            <div class="dbInfo">Name:<span id="aniName"> ${animal.name}</span></div>
+                            <div  class="dbInfo">Species:<span id="aniSpecies"> ${animal.species}</span></div>
+                            <div id="aniInfo">${animal.info}</div>
                             <button class="btn btn-primary" data-toggle="modal" data-target="#editModal"><i class="fas fa-edit"></i> Edit</button>
                         </td>
                     </tr>`
@@ -43,18 +43,22 @@
                         contentType: "application/JSON",
                         data:JSON.stringify({name, species, info, pix}) 
                     }).done((e) =>{
-                        alert("Change successful");
-        
+
                         $('#name').val("");
                         $('#species').val("");
                         $('#info').val("");
-        
                         $('#editModal').modal('hide');
+                        document.querySelector('#aniName').textContent = " " + name;
+                        document.querySelector('#aniSpecies').textContent = " " + species;
+                        document.querySelector('#aniInfo').textContent = info;
+                        alert("Change successful");
+                    
                     })
         
                 })
-            }
+
     })
+}
 
 
 
